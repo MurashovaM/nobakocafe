@@ -49,3 +49,14 @@ if (iconMenu) {
 		menuBody.classList.toggle('_active');
 	});
 }
+
+// ---------------------------
+$(window).on("scroll", function () {
+	var scrolled = $(this).scrollTop();
+	if( scrolled > 100 ) {
+			$('.wrapper').addClass('scrolled');
+	}   
+	if( scrolled <= 100 ) {     
+			$('.wrapper').removeClass('scrolled');
+	}
+});
