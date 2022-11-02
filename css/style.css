@@ -10,14 +10,15 @@ html, body{
 }
 .body._lock{
 	overflow: hidden;
+	position: fixed;
 }
 .wrapper{
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	margin-bottom: 50px;
 }
-
 ._container {
 	max-width: 1140px;
 	margin: 0px auto;
@@ -45,7 +46,6 @@ html, body{
 	background-color: rgba(255, 255, 255, 0.368);
 }
 .header__container {
-	max-width: 1140px;
 	margin: 0px auto;
 	display: flex;
 	padding: 0px 30px;
@@ -61,18 +61,6 @@ html, body{
 		max-width: 80px;
 		max-height: 80px;
 	}
-}
-.scrolled .header{
-	max-height: 120px;
-	background-color: rgba(255, 255, 255, 0.779);
-}
-.scrolled .page{
-	height: 60px;
-} 
-.scrolled .header .header__logo img{
-	max-width: 80px;
-	max-height: 80px;
-	margin-top: 0px;
 }
 .header__logo {
 	z-index: 5;
@@ -159,6 +147,18 @@ html, body{
 }
 .header-item-lang-sl {
 }
+.scrolled .header{
+	max-height: 120px;
+	background-color: rgba(255, 255, 255, 0.779);
+}
+.scrolled .wrapper{
+	height: 30px;
+} 
+.scrolled .header .header__logo img{
+	max-width: 80px;
+	max-height: 80px;
+	margin-top: 0px;
+}
 /* -----------------------------------*/
 body._pc .menu__list > li:hover .menu__sub-list{
 	opacity: 1;
@@ -192,7 +192,6 @@ body._touch .menu__list > li._active .menu__sub-list {
 body._touch .menu__list > li._active .menu__arrow{
 	transform: rotate(-180deg);
 }
-
 /* -----------------------------------*/
 @media(min-width:1069.98px){
 	.menu__list {
@@ -327,7 +326,7 @@ body._touch .menu__list > li._active .menu__arrow{
 ._container {
 }
 .main-block__body {
-	padding: 250px 0px 150px 0px;
+	padding: 250px 0px 30px 0px;
 	position: relative;
 	z-index: 2;
 	max-width: 500px;
@@ -337,13 +336,13 @@ body._touch .menu__list > li._active .menu__arrow{
 	line-height: calc(80 / 58 * 100%);
 	font-weight: 800;
 	letter-spacing: 0.2px;
-	text-shadow: 2px 2px 5px rgb(247, 242, 242);
+	text-shadow: 0.5px 0.5px 1px #ffffff;
 }
 .main-block__text {
 	color:#F2404F;
 	font-size: 20px;
 	line-height: 150%;
-	text-shadow: 2px 2px 5px rgb(247, 242, 242);
+	text-shadow: 0.5px 0.5px 1px #ffffff;
 }
 .main-block__image {
 	position: absolute;
@@ -352,3 +351,133 @@ body._touch .menu__list > li._active .menu__arrow{
 	top: 0;
 	left: 0;
 }
+@media(max-width:676px){
+	._ibg img {
+		opacity: 0.5;
+	}
+}
+@media(max-width:350px){
+	.main-block__title {
+		font-size: 48px;
+	}
+	.main-block__text{
+		font-size: 16px;
+	}
+}
+/* -------------------------------- */
+.page__advantage {
+}
+.advantage {
+}
+.advantage__container {
+	
+}
+._container {
+	
+}
+.advantage__items {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;	
+	position: relative;
+	z-index: 5;
+	opacity: 0.8;
+}
+.items-advantage {
+	
+}
+.item-advantage {
+	padding: 20px;
+	text-align: center;
+	flex: 0 1 25%;
+}
+.advantage-image {
+	max-width: 150px;
+	max-height: 150px;
+	align-items: stretch;
+}
+.advantage-image img{
+}
+.advantage-text {
+	font-size: 18px;
+	text-transform: capitalize;
+	letter-spacing: 0.2;
+	font-weight: 600;
+	padding-top: 20px;
+}
+@media(max-width:1099.98px){
+	.advantage__items{
+		margin: -30px 10px 20px 10px;
+		
+	}
+	.item-advantage{
+		padding: 10px;
+}
+}
+@media(max-width:767.98px){
+	.advantage-image {
+		max-width: 100px;
+		max-height: 100px;
+}
+}
+@media(max-width:676px){
+	.advantage-text {
+		font-size: 16px;
+	}
+	.item-advantage{
+		padding: 5px;
+		flex: 1 1 50%;
+}
+}
+/* --------------------------------------- */
+.page__what-is-opganic-raw {
+	margin: 40px 0px 40px 0px;
+	
+}
+.what-is-opganic-raw__container {	
+	background: url(../img/icon/adventage/001-vegan.png) 100% 100% no-repeat;
+}
+._container {
+
+}
+.what-is-opganic-raw__title {
+	font-size: 34px;
+	margin-bottom: 20px;
+	color: #27331a;
+	line-height: 140%;
+}
+.what-is-opganic-raw__text {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 142%;
+	letter-spacing: 0.2px;
+}
+/* -------------------------------------- */
+.page__image {
+}
+.image-big {
+}
+.image-big__container {
+}
+.image-big__body {
+}
+.image-big__items {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.image-big__item {
+	flex: 0 1 50%;
+	padding: 10px 0px;
+
+}
+.image-big__item img{
+	width: 100%;
+}
+.image-big__item img:hover{
+	transform: scale(1.02);
+	transition: all 0.6s ease 0s;
+}
+

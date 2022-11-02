@@ -53,10 +53,10 @@ if (iconMenu) {
 // ---------------------------
 $(window).on("scroll", function () {
 	var scrolled = $(this).scrollTop();
-	if( scrolled > 100 ) {
+	if( scrolled > 80 ) {
 			$('.wrapper').addClass('scrolled');
 	}   
-	if( scrolled <= 100 ) {     
+	if( scrolled <= 80 ) {     
 			$('.wrapper').removeClass('scrolled');
 	}
 });
