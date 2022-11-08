@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="css/popup.css">
 	<link rel="icon" type="image/svg" sizes="32x32" href="img/icon/06.svg" />
 	<link rel="icon" type="image/svg" sizes="16x16" href="img/icon/06.svg" />
 	<title>Nobakecafe</title>
@@ -14,7 +15,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="header">
 			<div class="translate__container _container">
 				<ul class="menu__button">
 					<li class="header-item-lang-en"><button id="en" class="translate">
@@ -22,7 +23,7 @@
 					</li>
 					<li class="header-item-lang-sl"><button id="sl" class="translate">
 							<img src="img/lang/02.svg.png" alt=""></button>
-						</button></li>
+					</li>
 				</ul>
 			</div>
 			<div class="header__container _container">
@@ -74,33 +75,185 @@
 							<button type="button" class="tabs-shop__button">Popsicle</button>
 						</nav>
 						<div class="tabs-shop__body">
+							<div class="tabs-shop__item item-tabs active">
+								<div class="item-tabs__items">
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="#Bazil" class="item-tabs__option popup-link">New</a>
+										</div>
+										<a href="#Bazil" class="item-tabs__image popup-link">
+											<img src="img/shop/cakes/01.jpeg" alt="cakes">
+											<div class="basket-card">Add to cart</div>
+										</a>
+										<div class="item-tabs__content">
+											<a href="#Bazil" class="item-tabs__title popup-link">Bazil freshness</a>
+											<div class="item-tabs__prise">45 €</div>
+										</div>
+									</div>
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="" class="item-tabs__option">New</a>
+										</div>
+										<a href="" class="item-tabs__image">
+											<img src="img/shop/cakes/02.jpeg" alt="cakes">
+										</a>
+										<div class="item-tabs__content">
+											<div class="item-tabs__title">Bazil freshness</div>
+											<div class="item-tabs__prise">45 €</div>
+										</div>
+									</div>
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="" class="item-tabs__option">New</a>
+										</div>
+										<a href="" class="item-tabs__image">
+											<img src="img/shop/cakes/03.jpg" alt="cakes">
+										</a>
+										<div class="item-tabs__content">
+											<div class="item-tabs__title">Bazil freshness</div>
+											<div class="item-tabs__prise">45 €</div>
+										</div>
+									</div>
+								</div>
+							</div>
 							<div class="tabs-shop__item item-tabs">
 								<div class="item-tabs__items">
 									<div class="item-tabs__item">
 										<div class="item-tabs__options">
-											<a class="item-tabs__option">New</a>
-											<a class="item-tabs__option">3d</a>
+											<a href="" class="item-tabs__option">New</a>
+											<a href="" class="item-tabs__option">3d</a>
 										</div>
 										<a href="" class="item-tabs__image">
-											<img src="img/shop/cakes/01.jpeg" alt="cakes">
+											<img src="img/shop/cupcakes/01.jpeg" alt="cakes">
 										</a>
 									</div>
 									<div class="item-tabs__item">
 										<div class="item-tabs__options">
-											<a class="item-tabs__option">New</a>
-											<a class="item-tabs__option">3d</a>
+											<a href="" class="item-tabs__option">New</a>
+											<a href="" class="item-tabs__option">3d</a>
 										</div>
 										<a href="" class="item-tabs__image">
-											<img src="img/shop/cakes/01.jpeg" alt="cakes">
+											<img src="img/shop/cupcakes/02.jpeg" alt="cakes">
 										</a>
 									</div>
 									<div class="item-tabs__item">
 										<div class="item-tabs__options">
-											<a class="item-tabs__option">New</a>
-											<a class="item-tabs__option">3d</a>
+											<a href="" class="item-tabs__option">New</a>
+											<a href="" class="item-tabs__option">3d</a>
 										</div>
 										<a href="" class="item-tabs__image">
-											<img src="img/shop/cakes/01.jpeg" alt="cakes">
+											<img src="img/shop/cupcakes/03.jpeg" alt="cakes">
+										</a>
+									</div>
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="" class="item-tabs__option">New</a>
+											<a href="" class="item-tabs__option">3d</a>
+										</div>
+										<a href="" class="item-tabs__image">
+											<img src="img/shop/cupcakes/01.jpeg" alt="cakes">
+										</a>
+									</div>
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="" class="item-tabs__option">New</a>
+											<a href="" class="item-tabs__option">3d</a>
+										</div>
+										<a href="" class="item-tabs__image">
+											<img src="img/shop/cupcakes/02.jpeg" alt="cakes">
+										</a>
+									</div>
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="" class="item-tabs__option">New</a>
+											<a href="" class="item-tabs__option">3d</a>
+										</div>
+										<a href="" class="item-tabs__image">
+											<img src="img/shop/cupcakes/03.jpeg" alt="cakes">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-shop__item item-tabs">
+								<div class="item-tabs__items">
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="" class="item-tabs__option">New</a>
+											<a href="" class="item-tabs__option">3d</a>
+										</div>
+										<a href="" class="item-tabs__image">
+											<img src="img/shop/candy/01.jpg" alt="cakes">
+										</a>
+									</div>
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="" class="item-tabs__option">New</a>
+											<a href="" class="item-tabs__option">3d</a>
+										</div>
+										<a href="" class="item-tabs__image">
+											<img src="img/shop/candy/02.jpeg" alt="cakes">
+										</a>
+									</div>
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="" class="item-tabs__option">New</a>
+											<a href="" class="item-tabs__option">3d</a>
+										</div>
+										<a href="" class="item-tabs__image">
+											<img src="img/shop/candy/03.png" alt="cakes">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-shop__item item-tabs">
+								<div class="item-tabs__items">
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="" class="item-tabs__option">New</a>
+											<a href="" class="item-tabs__option">3d</a>
+										</div>
+										<a href="" class="item-tabs__image">
+											<img src="img/shop/Cottage cheese/01.jpeg" alt="cakes">
+										</a>
+									</div>
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="" class="item-tabs__option">New</a>
+											<a href="" class="item-tabs__option">3d</a>
+										</div>
+										<a href="" class="item-tabs__image">
+											<img src="img/shop/Cottage cheese/02.png" alt="cakes">
+										</a>
+									</div>
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="" class="item-tabs__option">New</a>
+											<a href="" class="item-tabs__option">3d</a>
+										</div>
+										<a href="" class="item-tabs__image">
+											<img src="img/shop/Cottage cheese/03.jpeg" alt="cakes">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-shop__item item-tabs">
+								<div class="item-tabs__items">
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="" class="item-tabs__option">New</a>
+											<a href="" class="item-tabs__option">3d</a>
+										</div>
+										<a href="" class="item-tabs__image">
+											<img src="img/shop/Popsicle/01.png" alt="cakes">
+										</a>
+									</div>
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="" class="item-tabs__option">New</a>
+											<a href="" class="item-tabs__option">3d</a>
+										</div>
+										<a href="" class="item-tabs__image">
+											<img src="img/shop/Popsicle/02.png" alt="cakes">
 										</a>
 									</div>
 								</div>
@@ -109,12 +262,114 @@
 					</div>
 				</div>
 			</section>
+			<div class="backet__container _container">
+				<div class="icon__basket">
+					<a href="" class="basket-icon">
+						<img src="img/shop/01.png" alt="">
+					</a>
+				</div>
+			</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</main>
-		<footer class="footer">
-		</footer>
+		<!-- <footer class="footer">
+		</footer> -->
 	</div>
+	<div id="Bazil" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="#header" class="popup__close close-popup">X</a>
+				<div class="popup__items">
+					<div class="popup__img">
+						<img src="img/shop/cakes/01.jpeg" alt="basil">
+					</div>
+					<div class="popup__text block-text">
+						<div class="popup__title">Bazil freshness</div>
+						<div class="popup__prise">45 €</div>
+						<div class="popup__size">
+							<div>Size: </div>
+							<input type="radio" name="size" value="1 piece">1 piece<br>
+							<input type="radio" name="size" value="bento cake">bento cake<br>
+							<input type="radio" name="size" value="whole cake" checked>whole cake<br>
+						</div>
+						<div class="popup__number">
+							<div class="product__quantity"></div>
+						</div>
+						<div>
+							<a class="basket" href="">
+							<img src="img/shop/shopping-cart.png" alt="cart"> Add to cart
+							</a>
+						</div>
+						<div class="descriptoin__block">
+							<p>Top taste of refreshing lime with an emphasis on basil. The beautiful green color is provided
+								by the addition of spinach. In the center of the cake reveals raspberry coulis. You will
+								definitely fall in love with this unusual taste from the first bite.</p>
+							<p>Ingredients for biscuit: cashews, coconut flakes, coconut oil, agave syrup.</p>
+							<p>Ingredients for mousse: cashews, coconut oil, agave syrup, spinach, lime, basil, vanilla, salt.
+								Ingredients for cully: psyllium, raspberry, salt, agave syrup.</p>
+							<div class="compound__block">
+								<div class="compound__title">Nutritional value (per 100 g of product):</div>
+								<div class="compound__text">
+									<p class="lang"><span>Proteins:</span> 7 g.</p>
+									<p class="lang"><span>Fats:</span> 28 g.</p>
+									<p class="lang"><span>Carbohydrates:</span> 26 g.</p>
+									<p class="lang"><span>Calorie content:</span> 383 kcal.</p>
+									<p class="lang"><span>Weight of 1 portion: </span> 120 g.</p>
+									<p class="lang"><span>Bento cake:</span> 550 g.</p>
+									<p class="lang"><span>Whole cake:</span> 1100 g.</p>
+								</div>
+								<div class="compound__sub-title">*The production time for a whole or bento cake is 1-3 days (or
+									specify availability)
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/popup.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/tabs.js"></script>
+
+
+
+	<link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+
+	<div class="smart-basket__wrapper"></div>
+
+	<script src="./smartbasket/js/smartbasket.min.js"></script>
+
+	<script>
+		$(function () {
+			$('.smart-basket__wrapper').smbasket({
+				productElement: 'popup',
+				buttonAddToBasket: 'basket',
+				productPrice: 'product__price-number',
+				productSize: 'product__size-element',
+
+				productQuantityWrapper: 'product__quantity',
+				smartBasketMinArea: 'basket-icon',
+				countryCode: '+386',
+				smartBasketCurrency: '€',
+				smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
+
+				agreement: {
+					isRequired: true,
+					isChecked: true,
+					isLink: 'https://artstranger.ru/privacy.html',
+				},
+				nameIsRequired: false,
+			});
+		});
+	</script>
 </body>
 
 </html>
