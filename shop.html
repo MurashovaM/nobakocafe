@@ -15,14 +15,14 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header" id="header">
+		<header class="header">
 			<div class="translate__container _container">
 				<ul class="menu__button">
-					<li class="header-item-lang-en"><button id="en" class="translate">
-							<img src="img/lang/01.svg.png" alt=""></button>
-					</li>
 					<li class="header-item-lang-sl"><button id="sl" class="translate">
 							<img src="img/lang/02.svg.png" alt=""></button>
+						</button></li>
+					<li class="header-item-lang-en"><button id="en" class="translate">
+							<img src="img/lang/01.svg.png" alt=""></button>
 					</li>
 				</ul>
 			</div>
@@ -36,22 +36,23 @@
 					</div>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li><a href="aboutus.html" class="menu__link lang" key="about">About Us</a></li>
-							<li><a href="shop.html" class="menu__link lang" key="shop">Shop</a>
+							<li><a href="aboutus.html" class="menu__link lang" key="about">o nas</a></li>
+							<li><a href="shop.html" class="menu__link lang" key="shop">trgovina</a>
 								<span class="menu__arrow"></span>
 								<ul class="menu__sub-list">
-									<li><a href="" class="menu__sub-link lang" key="cakes">Cakes</a></li>
-									<li><a href="" class="menu__sub-link lang" key="cupcakes">Cupcakes</a></li>
-									<li><a href="" class="menu__sub-link lang" key="candy">Candy</a></li>
-									<li><a href="" class="menu__sub-link lang" key="cheese">Cottage cheese</a></li>
-									<li><a href="" class="menu__sub-link lang" key="popsicle">Popsicle</a></li>
+									<li><a href="" class="menu__sub-link lang" key="cakes">torte</a></li>
+									<li><a href="" class="menu__sub-link lang" key="cupcakes">kolački</a></li>
+									<li><a href="" class="menu__sub-link lang" key="candy">sladkarije</a></li>
+									<li><a href="" class="menu__sub-link lang" key="cheese">skuta</a></li>
+									<li><a href="" class="menu__sub-link lang" key="popsicle">sladoled</a></li>
 								</ul>
 							</li>
 							<li><a href="delivery.html" class="menu__link lang" key="delivery">
-									Delivery and payment</a>
+									dostava in plačilo</a>
 							</li>
-							<li><a href="" class="menu__link lang" key="contacts">Contacts</a></li>
-							<li><a href="" class="menu__link lang" key="quality">Quality certificates</a></li>
+							<li><a href="contacts.html" class="menu__link lang" key="contacts">kontakti</a></li>
+							<li><a href="certificates.html" class="menu__link lang" key="quality">certifikati kakovosti</a>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -62,28 +63,43 @@
 				<div class="shop__container _container">
 					<div class="shop__header header-shop">
 						<div class="header-shop__content">
-							<div class="header-shop__title block-title">Raw & Vegetarian & Natural</div>
-							<div class="header-shop__text block-text">It's worth a try!</div>
+							<div class="header-shop__title block-title lang" key="shop-title">Surov & Vegetarijanska & Naravno
+							</div>
+							<div class="header-shop__text block-text lang" key="shop-sub-title">Vredno je poskusiti!</div>
 						</div>
 					</div>
 					<div class="shop__tabs tabs-shop">
 						<nav class="tabs-shop__nav">
-							<button type="button" class="tabs-shop__button active">Cakes</button>
-							<button type="button" class="tabs-shop__button">Cupcakes</button>
-							<button type="button" class="tabs-shop__button">Candy</button>
-							<button type="button" class="tabs-shop__button">Cottage cheese</button>
-							<button type="button" class="tabs-shop__button">Popsicle</button>
+							<button type="button" class="tabs-shop__button active lang" key="cakes">torte</button>
+							<button type="button" class="tabs-shop__button lang" key="cupcakes">kolački</button>
+							<button type="button" class="tabs-shop__button lang" key="candy">sladkarije</button>
+							<button type="button" class="tabs-shop__button lang" key="cheese">skuta</button>
+							<button type="button" class="tabs-shop__button lang" key="popsicle">sladoled</button>
 						</nav>
 						<div class="tabs-shop__body">
 							<div class="tabs-shop__item item-tabs active">
 								<div class="item-tabs__items">
 									<div class="item-tabs__item">
 										<div class="item-tabs__options">
-											<a href="#Bazil" class="item-tabs__option popup-link">New</a>
+											<a href="#Bazil" class="item-tabs__option popup-link lang" key="new">Novo</a>
 										</div>
 										<a href="#Bazil" class="item-tabs__image popup-link">
 											<img src="img/shop/cakes/01.jpeg" alt="cakes">
-											<div class="basket-card">Add to cart</div>
+											<div class="basket-card lang" key="basket-card">Dodaj v voziček</div>
+										</a>
+										<div class="item-tabs__content">
+											<a href="#Bazil" class="item-tabs__title popup-link lang" key="bazil">Svežina bazilike
+											</a>
+											<div class="item-tabs__prise">45 €</div>
+										</div>
+									</div>
+									<div class="item-tabs__item">
+										<div class="item-tabs__options">
+											<a href="" class="item-tabs__option lang" key="new">Novo</a>
+										</div>
+										<a href="#Bazil" class="item-tabs__image popup-link">
+											<img src="img/shop/cakes/02.jpeg" alt="cakes">
+											<div class="basket-card lang" key="basket-card">Dodaj v voziček</div>
 										</a>
 										<div class="item-tabs__content">
 											<a href="#Bazil" class="item-tabs__title popup-link">Bazil freshness</a>
@@ -92,25 +108,14 @@
 									</div>
 									<div class="item-tabs__item">
 										<div class="item-tabs__options">
-											<a href="" class="item-tabs__option">New</a>
+											<a href="#Bazil" class="item-tabs__option popup-link lang" key="new">Novo</a>
 										</div>
-										<a href="" class="item-tabs__image">
-											<img src="img/shop/cakes/02.jpeg" alt="cakes">
-										</a>
-										<div class="item-tabs__content">
-											<div class="item-tabs__title">Bazil freshness</div>
-											<div class="item-tabs__prise">45 €</div>
-										</div>
-									</div>
-									<div class="item-tabs__item">
-										<div class="item-tabs__options">
-											<a href="" class="item-tabs__option">New</a>
-										</div>
-										<a href="" class="item-tabs__image">
+										<a href="#Bazil" class="item-tabs__image popup-link">
 											<img src="img/shop/cakes/03.jpg" alt="cakes">
+											<div class="basket-card lang" key="basket-card">Dodaj v voziček</div>
 										</a>
 										<div class="item-tabs__content">
-											<div class="item-tabs__title">Bazil freshness</div>
+											<a href="#Bazil" class="item-tabs__title popup-link">Bazil freshness</a>
 											<div class="item-tabs__prise">45 €</div>
 										</div>
 									</div>
@@ -264,12 +269,12 @@
 			</section>
 			<div class="backet__container _container">
 				<div class="icon__basket">
-					<a href="" class="basket-icon">
+					<a href="#" class="basket-icon">
 						<img src="img/shop/01.png" alt="">
 					</a>
 				</div>
 			</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</main>
 		<!-- <footer class="footer">
 		</footer> -->
@@ -283,42 +288,55 @@
 						<img src="img/shop/cakes/01.jpeg" alt="basil">
 					</div>
 					<div class="popup__text block-text">
-						<div class="popup__title">Bazil freshness</div>
-						<div class="popup__prise">45 €</div>
+						<div class="popup__title lang" key="bazil">Svežina bazilike</div>
+						<div class="product__price popup__price"><span class="product__price-number">45</span> €</div>
 						<div class="popup__size">
-							<div>Size: </div>
-							<input type="radio" name="size" value="1 piece">1 piece<br>
-							<input type="radio" name="size" value="bento cake">bento cake<br>
-							<input type="radio" name="size" value="whole cake" checked>whole cake<br>
+							<div class="lang" key="size">Velikost: </div>
+							<div class="product__size flex-button">
+								<div class="product__size-element radio-button lang" key="whole" data-sb-curent-price="45"
+									data-sb-curent-size="whole cake" data-sb-curent-id-or-vendor-code="003">cela torta
+								</div>
+								<div class="product__size-element radio-button lang" data-sb-curent-price="25"
+									data-sb-curent-size="bento cake" data-sb-curent-id-or-vendor-code="002" key="bento">bento
+									cake</div>
+								<div class="product__size-element radio-button lang" data-sb-curent-price="4"
+									data-sb-curent-size="1 piece" data-sb-curent-id-or-vendor-code="001" key="piece">1 piece
+								</div>
+							</div>
 						</div>
 						<div class="popup__number">
 							<div class="product__quantity"></div>
 						</div>
-						<div>
-							<a class="basket" href="">
-							<img src="img/shop/shopping-cart.png" alt="cart"> Add to cart
+						<div class="basket__block">
+							<a class="basket" data-sb-id-or-vendor-code="001" data-sb-product-name="Bazil freshness"
+								data-sb-product-price="45" data-sb-product-quantity="1"
+								data-sb-product-img="img/shop/cakes/01.jpeg" href="#">
+								<img src="img/shop/shopping-cart.png" class="lang" key="basket-card" alt="cart"> Dodaj v voziček
 							</a>
 						</div>
 						<div class="descriptoin__block">
-							<p>Top taste of refreshing lime with an emphasis on basil. The beautiful green color is provided
-								by the addition of spinach. In the center of the cake reveals raspberry coulis. You will
-								definitely fall in love with this unusual taste from the first bite.</p>
-							<p>Ingredients for biscuit: cashews, coconut flakes, coconut oil, agave syrup.</p>
-							<p>Ingredients for mousse: cashews, coconut oil, agave syrup, spinach, lime, basil, vanilla, salt.
-								Ingredients for cully: psyllium, raspberry, salt, agave syrup.</p>
+							<p class="lang" key="bazil-1">Vrhunski okus osvežilne limete s poudarkom na baziliki. Za lepo
+								zeleno barvo poskrbi dodatek špinače. V središču torte se razkriva malinov kuli. V ta nenavaden
+								okus se boste zagotovo zaljubili že ob prvem grižljaju.</p>
+							<p class="lang" key="bazil-2">Sestavine za biskvit: indijski oreščki, kokosovi kosmiči, kokosovo
+								olje, agavin sirup.</p>
+							<p class="lang" key="bazil-3">Sestavine za mousse: indijski oreščki, kokosovo olje, agavin sirup,
+								špinača, limeta, bazilika,vanilija, sol.</p>
+							<p class="lang" key="bazil-4">Sestavine za kuli: psilium, maline, sol, agavin sirup.</p>
 							<div class="compound__block">
-								<div class="compound__title">Nutritional value (per 100 g of product):</div>
-								<div class="compound__text">
-									<p class="lang"><span>Proteins:</span> 7 g.</p>
-									<p class="lang"><span>Fats:</span> 28 g.</p>
-									<p class="lang"><span>Carbohydrates:</span> 26 g.</p>
-									<p class="lang"><span>Calorie content:</span> 383 kcal.</p>
-									<p class="lang"><span>Weight of 1 portion: </span> 120 g.</p>
-									<p class="lang"><span>Bento cake:</span> 550 g.</p>
-									<p class="lang"><span>Whole cake:</span> 1100 g.</p>
+								<div class="compound__title lang" key="value">Hranilna vrednost (na 100 g izdelka):
 								</div>
-								<div class="compound__sub-title">*The production time for a whole or bento cake is 1-3 days (or
-									specify availability)
+								<div class="compound__text">
+									<p class="lang" key="Proteins"><span>Beljakovine:</span> 7 g.</p>
+									<p class="lang" key="Fats"><span>Maščobe:</span> 28 g.</p>
+									<p class="lang" key="Carbohydrates"><span>Ogljikovi hidrati:</span> 26 g.</p>
+									<p class="lang" key="Calorie"><span>Vsebnost kalorij: </span> 383 kcal.</p>
+									<p class="lang" key="Weight"><span>Teža 1 porcije: </span> 120 g.</p>
+									<p class="lang" key="1 portion"><span>Bento torta:</span> 550 g.</p>
+									<p class="lang" key="Whole cake"><span>Cela torta:</span> 1100 g.</p>
+								</div>
+								<div class="compound__sub-title lang" key="compound__sub-title">Čas izdelave cele ali bento
+									torte je 1-3 dni (ali navedite razpoložljivost)
 								</div>
 							</div>
 						</div>
@@ -329,11 +347,6 @@
 	</div>
 
 
-
-
-
-
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="js/popup.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/script.js"></script>
@@ -347,10 +360,11 @@
 
 	<script src="./smartbasket/js/smartbasket.min.js"></script>
 
+
 	<script>
 		$(function () {
 			$('.smart-basket__wrapper').smbasket({
-				productElement: 'popup',
+				productElement: 'popup__content',
 				buttonAddToBasket: 'basket',
 				productPrice: 'product__price-number',
 				productSize: 'product__size-element',
@@ -359,17 +373,18 @@
 				smartBasketMinArea: 'basket-icon',
 				countryCode: '+386',
 				smartBasketCurrency: '€',
-				smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
+				smartBasketMinIconPath: './smartbasket/img/01.png',
 
 				agreement: {
 					isRequired: true,
 					isChecked: true,
-					isLink: 'https://artstranger.ru/privacy.html',
+					isLink: 'https://concordpay.concord.ua/',
 				},
 				nameIsRequired: false,
 			});
 		});
 	</script>
+
 </body>
 
 </html>

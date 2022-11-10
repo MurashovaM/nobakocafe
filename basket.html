@@ -1,0 +1,143 @@
+<div class="smart-basket__wrapper">
+	<div class="smart-basket smart-basket_active">
+		<form class="smart-basket__form" method="POST" id="smart-basket__form" enctype="multipart/form-data">
+			<div class="smart-basket__product-item">
+				<div class="smart-basket__product-name">Товар</div>
+				<div class="smart-basket__product-id">ID</div>
+				<div class="smart-basket__product-price">Цена / €<span class="smart-basket__info-icon">?</span><span
+						class="smart-basket__info-msgs">Цена за 1 товар или услугу<button
+							class="smart-basket__info-msgs-close">×</button></span></div>
+				<div class="smart-basket__product-quantity smart-basket__product-quantity_header">Кол-во</div>
+				<div class="smart-basket__product-price-common">Общая цена / €</div>
+				<div class="smart-basket__product-delete">Удалить</div>
+			</div>
+			<div class="smart-basket__product-item">
+				<div class="smart-basket__product-name"><img src="img/shop/cakes/01.jpeg" width="60"><span>Bazil
+						freshness<span class="smart-basket__product-size"> Размер: bento cake</span></span><input
+						class="smart-basket__input" type="hidden" name="002[productImg]" value="img/shop/cakes/01.jpeg"><input
+						class="smart-basket__input" type="hidden" name="002[productName]" value="Bazil freshness"><input
+						class="smart-basket__input" type="hidden" name="002[productSize]" value="bento cake"></div>
+				<div class="smart-basket__product-id">002<input class="smart-basket__input" type="hidden" value="002"
+						name="002[productId]"></div>
+				<div class="smart-basket__product-price">20<input class="smart-basket__input" type="hidden"
+						name="002[productPrice]" value="20"></div>
+				<div class="smart-basket__product-quantity"><button class="smart-basket__remove-item"
+						data-sb-id="002">-</button><input class="smart-basket__product-quantity-state" type="number" min="1"
+						step="1" pattern="^[0-9]" data-sb-id="002"><button class="smart-basket__add-item"
+						data-sb-id="002">+</button><input class="smart-basket__input" type="hidden"
+						name="002[productQuantity]" value="1"></div>
+				<div class="smart-basket__product-price-common"><input class="smart-basket__input"
+						name="002[productPriceCommon]"></div><button class="smart-basket__product-delete"
+					data-sb-product-delete="002"><span class="smart-basket__delete-icon">×</span></button>
+			</div>
+			<div class="smart-basket__product-item">
+				<div class="smart-basket__product-name"><img src="img/shop/cakes/01.jpeg" width="60"><span>Bazil
+						freshness</span><input class="smart-basket__input" type="hidden" name="001[productImg]"
+						value="img/shop/cakes/01.jpeg"><input class="smart-basket__input" type="hidden"
+						name="001[productName]" value="Bazil freshness"><input class="smart-basket__input" type="hidden"
+						name="001[productSize]"></div>
+				<div class="smart-basket__product-id">001<input class="smart-basket__input" type="hidden" value="001"
+						name="001[productId]"></div>
+				<div class="smart-basket__product-price">45<input class="smart-basket__input" type="hidden"
+						name="001[productPrice]" value="45"></div>
+				<div class="smart-basket__product-quantity"><button class="smart-basket__remove-item"
+						data-sb-id="001">-</button><input class="smart-basket__product-quantity-state" type="number" min="1"
+						step="1" pattern="^[0-9]" data-sb-id="001"><button class="smart-basket__add-item"
+						data-sb-id="001">+</button><input class="smart-basket__input" type="hidden"
+						name="001[productQuantity]" value="1"></div>
+				<div class="smart-basket__product-price-common"><input class="smart-basket__input"
+						name="001[productPriceCommon]"></div><button class="smart-basket__product-delete"
+					data-sb-product-delete="001"><span class="smart-basket__delete-icon">×</span></button>
+			</div>
+			<div class="smart-basket__result-common">
+				<div class="smart-basket__empty-title" style="display: none;">Корзина пуста. Вы не добавили ни одного товара
+				</div>
+				<div class="smart-basket__success-title" style="display: none;">Заказ принят. Ожидайте звонка</div>
+				<div class="smart-basket__quantity-common"><span>Всего товаров: </span> 2</div>
+				<div class="smart-basket__price-common"><span>Общая стоимость: </span> <input name="finalPrice"
+						class="smart-basket__total-cost" type="text" value="65.00 €"></div>
+			</div>
+			<div class="smart-basket__user-form">
+				<div class="smart-basket__user-info">
+					<div class="smart-basket__input-wrapper"><input class="smart-basket__user-input" type="text"
+							placeholder="Введите имя" name="userName" required="required"></div>
+					<div class="smart-basket__input-wrapper"><input class="smart-basket__user-input" type="tel"
+							placeholder="Введите телефон" name="userTel" required="required" maxlength="18"></div>
+					<div class="smart-basket__input-wrapper"><input class="smart-basket__user-input" type="email"
+							placeholder="Введите e-mail" name="userEmail"></div>
+					<div class="smart-basket__agreement-wrapper"><input type="checkbox" name="agreement"
+							class="smart-basket__input-agreement" id="smart-basket__input-agreement" checked="checked"
+							value="Я принимаю условия пользовательского соглашения"><label
+							class="smart-basket__label-agreement" for="smart-basket__input-agreement"></label><a
+							class="smart-basket__link-agreement" href="https://artstranger.ru/privacy.html" target="_blank"
+							rel="nofollow">Я принимаю условия пользовательского соглашения</a></div>
+				</div>
+				<div class="smart-basket__footer"><button class="smart-basket__close-form">Продолжить
+						покупки</button><button class="smart-basket__send-form" form="smart-basket__form"
+						type="submit">Сделать заказ</button></div>
+			</div>
+		</form>
+	</div>
+</div>
+<div class="smart-basket__alert-wrapper">
+	<div class="smart-basket__alert">
+		<div class="smart-basket__alert-icon">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+				<circle class="path circle" fill="none" stroke="#D06079" stroke-width="6" stroke-miterlimit="10" cx="65.1"
+					cy="65.1" r="62.1"></circle>
+				<line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round"
+					stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"></line>
+				<line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round"
+					stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"></line>
+			</svg>
+		</div>
+		<div class="smart-basket__alert-text">Товар уже добавлен в корзину</div>
+		<div class="smart-basket__alert-footer"><button
+				class="smart-basket__alert-button smart-basket__alert-button_close">Продолжить покупки</button><button
+				class="smart-basket__alert-button smart-basket__alert-button_by">В корзину</button></div>
+	</div>
+</div>
+<div class="smart-basket__wrapper">
+	<div class="smart-basket smart-basket_active">
+		<form class="smart-basket__form" method="POST" id="smart-basket__form" enctype="multipart/form-data">
+			<div class="smart-basket__product-item">
+				<div class="smart-basket__product-name">Товар</div>
+				<div class="smart-basket__product-id">ID</div>
+				<div class="smart-basket__product-price">Цена / €<span class="smart-basket__info-icon">?</span><span
+						class="smart-basket__info-msgs">Цена за 1 товар или услугу<button
+							class="smart-basket__info-msgs-close">×</button></span></div>
+				<div class="smart-basket__product-quantity smart-basket__product-quantity_header">Кол-во</div>
+				<div class="smart-basket__product-price-common">Общая цена / €</div>
+				<div class="smart-basket__product-delete">Удалить</div>
+			</div>
+			<div class="smart-basket__result-common">
+				<div class="smart-basket__empty-title" style="display: block;">Корзина пуста. Вы не добавили ни одного
+					товара</div>
+				<div class="smart-basket__success-title" style="display: none;">Заказ принят. Ожидайте звонка</div>
+				<div class="smart-basket__quantity-common"><span>Всего товаров: </span> 0</div>
+				<div class="smart-basket__price-common"><span>Общая стоимость: </span> <input name="finalPrice"
+						class="smart-basket__total-cost" type="text" value="0.00 €"></div>
+			</div>
+			<div class="smart-basket__user-form">
+				<div class="smart-basket__user-info">
+					<div class="smart-basket__input-wrapper smart-basket__input-wrapper_error"><input
+							class="smart-basket__user-input" type="text" placeholder="Введите имя" name="userName"
+							required="required"></div>
+					<div class="smart-basket__input-wrapper"><input class="smart-basket__user-input" type="tel"
+							placeholder="Введите телефон" name="userTel" required="required" maxlength="18"></div>
+					<div class="smart-basket__input-wrapper"><input class="smart-basket__user-input" type="email"
+							placeholder="Введите e-mail" name="userEmail"></div>
+					<div class="smart-basket__agreement-wrapper"><input type="checkbox" name="agreement"
+							class="smart-basket__input-agreement" id="smart-basket__input-agreement" checked="checked"
+							value="Я принимаю условия пользовательского соглашения"><label
+							class="smart-basket__label-agreement" for="smart-basket__input-agreement"></label><a
+							class="smart-basket__link-agreement" href="https://artstranger.ru/privacy.html" target="_blank"
+							rel="nofollow">Я принимаю условия пользовательского соглашения</a></div>
+				</div>
+				<div class="smart-basket__footer"><button class="smart-basket__close-form">Продолжить
+						покупки</button><button class="smart-basket__send-form" form="smart-basket__form"
+						type="submit">Сделать заказ</button></div>
+			</div>
+		</form>
+	</div>
+</div>
