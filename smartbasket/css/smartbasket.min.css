@@ -328,7 +328,7 @@
 }
 @media (max-width: 1030px) {
 	.smart-basket__product-price:before {
-		content: "Price for 1 product: ";
+		content: "Cena za 1 izdelek: ";
 		color: #929292;
 		margin-right: 5px;
 		text-align: start;
@@ -461,7 +461,7 @@
 }
 @media (max-width: 1030px) {
 	.smart-basket__product-price-common:before {
-		content: "Total price: ";
+		content: "Skupna cena: ";
 		color: #929292;
 		margin-right: 5px;
 		width: 100%;
