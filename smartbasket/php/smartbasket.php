@@ -31,18 +31,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			}
 		}
 
-        if (isset($_POST['agreement']) ) {
-            echo 'agreement';
-            if(empty($_POST['agreement'])) {
-                echo 'agreement';
+      if (isset($_POST['agreement']) ) {
+         echo 'agreement';
+         if(empty($_POST['agreement'])) {
+               echo 'agreement';
             } else {
-                $agreement = "<b>Соглашение: </b>" . strip_tags($_POST['agreement']) . "<br>";
+               $agreement = "<b>Соглашение: </b>" . strip_tags($_POST['agreement']) . "<br>";
             }
-        }
+      }
 
-        if (isset($_POST['finalPrice']) ) {
-            $finalPrice = "<b>Общая стоимость: </b>" . strip_tags($_POST['finalPrice']) . "<br>";
-        }
+      if (isset($_POST['finalPrice']) ) {
+         $finalPrice = "<b>Общая стоимость: </b>" . strip_tags($_POST['finalPrice']) . "<br>";
+      }
 
 
 
@@ -158,20 +158,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	}
 
 		$mail->setFrom(SENDER);
-    $mail->addAddress(CATCHER);
-    if(defined(CATCHER2)){
-        $mail->addAddress(CATCHER2);
-    }
-    $mail->CharSet = CHARSET;
-    $mail->isHTML(true);
+   $mail->addAddress(CATCHER);
+   if(defined(CATCHER2)){
+      $mail->addAddress(CATCHER2);
+   }
+   $mail->CharSet = CHARSET;
+   $mail->isHTML(true);
 		$mail->Subject = SUBJECT; // Заголовок письма
 		$mail->Body = "$bodyHeader $body $bodybottom";
 		if(!$mail->send()) {
             echo 'attantion';
-        } else {
+      } else {
             // echo '<p class="smartlid__respond-success">' . SUCCESSMSGS . '</p>';
             echo 'successmsgs';
-        }
+      }
 } else {
 	header ("Location: /");
 }

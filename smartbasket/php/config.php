@@ -1,5 +1,5 @@
 <?php
-    require_once($_SERVER['DOCUMENT_ROOT'] . '/smartbasket/php/phpmailer/phpmailer.php');
+   require_once($_SERVER['DOCUMENT_ROOT'] . '/smartbasket/php/phpmailer/phpmailer.php');
 
 		// *** SMTP *** //
 
@@ -7,7 +7,7 @@
 		const HOST = 'smtp.gmail.com';
 		const LOGIN = 'murashovam2016@gmail.com';
 		const PASS = 'Welcome!995';
-		const PORT = '465';
+		const PORT = '25';
 
 		// *** /SMTP *** //
    
