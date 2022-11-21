@@ -60,43 +60,6 @@ $(window).on("scroll", function () {
 		$('.wrapper').removeClass('scrolled');
 	}
 });
-
-
-
-
-
-
-
-
-
-// --------------------------------------------------------------------
-document.body.addEventListener('click', e => {
-	if (!e.target.matches('button')) return
-	if (e.target.innerText === '+') return
-	if (e.target.innerText === '-') return
-	if (e.target.innerText === 'Nadaljuj z nakupovanjem') return
-	if (e.target.innerText === 'Dodaj v voziček') return
-	if (e.target.innerText === 'Naredite naročilo') return
-
-
-	document.querySelector('.popup__img img').src = e.target.dataset.src
-
-	document.querySelectorAll('button').forEach(btn => btn.classList.remove('changed'))
-	e.target.classList.add('changed')
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
 // -------------------------------------------------------------------
 var coll = document.getElementsByClassName("refunds");
 var i;
@@ -112,3 +75,17 @@ for (i = 0; i < coll.length; i++) {
 		}
 	});
 }
+// ------------------------------------------------------------------------
+$(document).ready(function () {
+	$('.popup__img').slick({
+		arrows: false,
+		fade: true,
+		dots: false,
+		initialSlide: 1,
+		adaptiveHeight: true,
+		autoplay: true,
+		speed: 2000,
+		autoplaySpeed: 2500,
+	});
+});
+// --------------------------------------------------------------------
