@@ -194,10 +194,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	};
 
+	// let addbutton = document.querySelectorAll('.product__btn ')
+	// console.log(addbutton)
+	// addbutton.forEach(el => {
+	// 	addEventListener('click', console.log(el))
+	// 	console.log(el)
+	// });
 
 	const initialState = () => {
+		console.log(1)
 		if (localStorage.getItem('products') !== null) {
+			console.log(2)
+
+
+
 			// cartProductsList.querySelector('.simplebar-content').innerHTML = localStorage.getItem('products');
+
 			printQuantity();
 			countSumm();
 			printFullPrice();
@@ -209,10 +221,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	};
 
-	// initialState();
+	initialState();
 
-	
-	console.log((localStorage.getItem('products')))
+
+
 
 	const updataStorage = () => {
 		let parent = cartProductsList.querySelector('.simplebar-content');
