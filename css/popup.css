@@ -5,7 +5,7 @@
 	background-color: rgba(0, 0, 0, 0.795);
 	top: 0;
 	left: 0;
-	z-index: 11;
+	z-index: 21;
 	opacity: 0;
 	visibility: hidden;
 	overflow-y: auto;

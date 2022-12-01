@@ -1,0 +1,211 @@
+/* ---------------------------------ADVENTEGE---------------------------------------- */
+.page__advantage {
+}
+.advantage {
+}
+.advantage__container {
+}
+._container {
+}
+.advantage__items {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	z-index: 5;
+	opacity: 0.8;
+}
+.items-advantage {
+}
+.item-advantage {
+	padding: 20px;
+	text-align: center;
+	flex: 0 1 25%;
+}
+.advantage-image {
+	max-width: 150px;
+	max-height: 150px;
+	align-items: stretch;
+}
+.advantage-image img {
+}
+.advantage-text {
+	font-size: 18px;
+	text-transform: capitalize;
+	letter-spacing: 0.2;
+	font-weight: 600;
+	padding: 10px 5px 10px 5px;
+	color: #fff;
+}
+@media (max-width: 1099.98px) {
+	.advantage__items {
+		margin: -30px 10px 20px 10px;
+	}
+	.item-advantage {
+		padding: 10px;
+	}
+}
+@media (max-width: 767.98px) {
+	.advantage-image {
+		max-width: 100px;
+		max-height: 100px;
+	}
+}
+@media (max-width: 676px) {
+	.advantage-text {
+		font-size: 16px;
+	}
+	.item-advantage {
+		padding: 5px;
+		flex: 1 1 50%;
+	}
+}
+/* ---------------------------------------------------------------- */
+.page__what-is-opganic-raw {
+	margin: 40px 0px 40px 0px;
+}
+.what-is-opganic-raw__container {
+	background: url(../img/icon/adventage/001-vegan.png) 100% 100% no-repeat;
+}
+.what-is-opganic-raw__title {
+}
+.what-is-opganic-raw__content p {
+	margin-bottom: 10px;
+}
+.what-is-opganic-raw__text {
+}
+/* --------------------------------------------------------------- */
+.page__image {
+}
+.image-big {
+}
+.image-big__container {
+	padding: 0px 0px 30px 0px;
+}
+.image-big__body {
+}
+.image-big__items {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.image-big__item {
+	flex: 0 1 50%;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+}
+.image-big__item img {
+	width: 100%;
+	height: auto;
+	transition: transform 0.6s ease 0s;
+	display: block;
+}
+.overlay {
+	position: absolute;
+	bottom: 0;
+	color: #f1f1f1;
+	width: 100%;
+	height: 100%;
+	transition: 0.6s ease;
+	opacity: 0;
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	align-items: center;
+	text-align: center;
+}
+.image-big__item:hover .overlay {
+	opacity: 1;
+}
+.image-big__item img:hover {
+	transform: scale(1.2);
+}
+.chocoberry {
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5) url(../img/main/blueberry.png) 95% 5% no-repeat;
+}
+.lime {
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5) url(../img/main/raspberry.png) 5% 5% no-repeat;
+}
+.image-first {
+}
+.image-first img {
+}
+.cakes__content {
+	padding-top: 25%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.cakes-title {
+	font-size: 20px;
+	padding: 20px 0px;
+	letter-spacing: 0.3px;
+	text-align: center;
+}
+.cakes-text {
+	font-size: 16px;
+	line-height: 170%;
+}
+@media (max-width: 1120px) {
+	.cakes__content {
+		padding-top: 15%;
+	}
+	.cakes-title {
+		font-size: 16px;
+		padding: 10px 0px;
+	}
+	.cakes-text {
+		font-size: 14px;
+		line-height: 170%;
+	}
+}
+
+@media (max-width: 676px) {
+	.image-big__item {
+		flex: 0 1 100%;
+	}
+	.cakes__content {
+		padding-top: 25%;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+	.cakes-title {
+		font-size: 20px;
+		padding: 20px 0px;
+		letter-spacing: 0.3px;
+		text-align: center;
+	}
+	.cakes-text {
+		font-size: 16px;
+		line-height: 170%;
+	}
+}
+@media (max-width: 550px) {
+	.cakes__content {
+		padding-top: 15%;
+	}
+	.cakes-title {
+		font-size: 16px;
+		padding: 10px 0px;
+	}
+	.cakes-text {
+		font-size: 14px;
+		line-height: 170%;
+	}
+}
+@media (max-width: 370px) {
+	.cakes__content {
+		padding-top: 12%;
+	}
+	.cakes-text {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 160%;
+	}
+}

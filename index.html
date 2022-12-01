@@ -29,32 +29,55 @@
 				<a href="index.html" class="header__logo">
 					<img src="img/logo/04.png" alt="logo">
 				</a>
-				<div class="header__menu menu">
+				<nav class="header__nav nav">
 					<div class="menu__icon">
 						<span></span>
 					</div>
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li><a href="aboutus.html" class="menu__link lang" key="about">o nas</a></li>
-							<li><a href="shop.html" class="menu__link lang" key="shop">trgovina</a>
-								<span class="menu__arrow"></span>
-								<ul class="menu__sub-list">
-									<li><a href="shop.html" class="menu__sub-link lang" key="cakes">torte</a></li>
-									<li><a href="shop.html" class="menu__sub-link lang" key="candy">sladkarije</a></li>
-									<li><a href="shop.html" class="menu__sub-link lang" key="cheese">skuta</a></li>
-									<li><a href="shop.html" class="menu__sub-link lang" key="popsicle">sladoled</a></li>
-									<li><a href="shop.html" class="menu__sub-link lang" key="cupcakes">sladki kompleti</a></li>
-								</ul>
-							</li>
-							<li><a href="delivery.html" class="menu__link lang" key="delivery">
-									dostava in plačilo</a>
-							</li>
-							<li><a href="contacts.html" class="menu__link lang" key="contacts">kontakti</a></li>
-							<li><a href="blog.html" class="menu__link lang" key="blog">blog</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+					<ul class="nav__list menu__list menu__body">
+						<li class="nav__item"><a href="aboutus.html" class="nav__link lang" key="about">o nas</a></li>
+						<li class="nav__item"><a href="shop.html" class="nav__link lang" key="shop">trgovina</a>
+							<span class="menu__arrow"></span>
+							<ul class="menu__sub-list">
+								<li><a href="shop.html" class="menu__sub-link lang" key="cakes">torte</a></li>
+								<li><a href="shop.html" class="menu__sub-link lang" key="candy">sladkarije</a></li>
+								<li><a href="shop.html" class="menu__sub-link lang" key="cheese">skuta</a></li>
+								<li><a href="shop.html" class="menu__sub-link lang" key="popsicle">sladoled</a></li>
+								<li><a href="shop.html" class="menu__sub-link lang" key="cupcakes">sladki kompleti</a></li>
+							</ul>
+						</li>
+						<li class="nav__item"><a href="delivery.html" class="nav__link lang" key="delivery">dostava in
+								plačilo</a></li>
+						<li class="nav__item"><a href="contacts.html" class="nav__link lang" key="contacts">kontakti</a></li>
+						<li class="nav__item"><a href="blog.html" class="nav__link lang" key="blog">blog</a></li>
+					</ul>
+					<div class="header__cart cart" tabindex="0">
+						<div class="cart-image">
+							<img src="img/shop/bag-shopping.svg" alt="bag">
+							<span class="cart__quantity">0</span>
+						</div>
+						<div class="cart-content">
+							<ul class="cart-content__list" data-simplebar>
+								<li class="cart-content__item">
+									<article class="cart-content__product cart-product">
+										<img src="img/shop/cakes/bazil/00011.jpeg" alt="bazil" class="cart-product__img">
+										<div class="cart-product__text">
+											<h3 class="cart-product__title lang" key="bazil">Svežina bazilike</h3>
+											<span class="cart-product__price">45 €</span>
+										</div>
+										<button class="cart-product__delete" aria-label="Видалити товар"></button>
+									</article>
+								</li>
+							</ul>
+							<div class="cart-content__buttom">
+								<div class="cart-content__fullprice">
+									<span>Skupna cena:</span>
+									<span class="fullprice">1234 €</span>
+								</div>
+								<button class="cart-content__btn btn lang" key="basket-card">Dodaj v voziček</button>
+							</div>
+						</div>
+					</div>
+				</nav>
 			</div>
 		</header>
 		<main class="page">
@@ -99,15 +122,14 @@
 						</span>
 					</h2>
 					<div class="what-is-opganic-raw__content block-text">
-						<p class="what-is-opganic-raw__text lang" key="raw-text">Dolgo časa so ljudje jedli sladice, zavedajoč
-							se, da so velike količine sladkorja, hitrih ogljikovih hidratov, laktoze in sintetičnih ojačevalcev
-							okusa škodljive za njihovo zdravje. Zdaj lahko to spremenite. RAW sladica je naložba v integriteto
-							in dobro delovanje vašega telesa.</p>
-						<p class="what-is-opganic-raw__text lang" key="raw-text-1">Bio presna sladica - slaščice iz
-							rastlinskih sestavin. Sladkane so samo z naravnimi sirupi. Sladice so pripravljene brez toplotne
-							obdelave.</p>
-						<p class="what-is-opganic-raw__text lang" key="raw-text-2">Dovolj je, da se postavite pred izbiro:
-							koristno ali okusno? SUROVE sladice - kjer je koristno okusno.</p>
+						<p class="what-is-opganic-raw__text lang" key="raw-text">Dolgo so ljudje jedli sladice, saj so se niso
+							zavedali, da so velike količine sladkorja, hitrih ogljikovih hidratov, laktoze in sintetičnih
+							ojačevalcev okusa škodljive za njihovo zdravje. Zdaj lahko to spremenite. Presna sladica je naložba
+							v dobro počutje in dobro delovanje vašega telesa.</p>
+						<p class="what-is-opganic-raw__text lang" key="raw-text-1">Presne sladice so iz rastlinskih sestavin,
+							sladkane samo z naravnimi sirupi. Sladice so pripravljene brez toplotne obdelave.</p>
+						<p class="what-is-opganic-raw__text lang" key="raw-text-2">NI TREBA VEČ IZBIRATI: koristno ali okusno?
+							PRESNE sladice – kjer je koristno okusno.</p>
 					</div>
 				</div>
 			</div>
@@ -115,11 +137,14 @@
 				<div class="image-big__container">
 					<div class="image-big__body">
 						<div class="image-big__items">
-							<a href="#" class="image-big__item">
+							<a href="shop.html" class="image-big__item">
 								<img class="image-first" src="img/bigimage/01.jpeg" alt="cake">
 								<div class="overlay chocoberry">
-									<div class="cakes__text">
-										<div class="cakes-title">very chocoberry</div>
+									<div class="cakes__content">
+										<div class="cakes-title lang" key="malina">Malinova nevihta</div>
+										<p class="cakes-text lang" key="malina-1">Lahka tekstura vaniljeve kreme v kombinaciji
+											z malinovim tartom tvori nepozaben ples okusov. Navdušile vas bodo tudi sveže jagode v
+											notranjosti.</p>
 									</div>
 								</div>
 							</a>
@@ -127,8 +152,10 @@
 								<img class="image-first" src="img/bigimage/015.jpeg" alt="cake">
 								<div class="overlay lime">
 									<div class="cakes__content">
-										<div class="cakes-title lang" key="image-big">Malinova nevihta</div>
-										<p class="lang cakes-text" key="image-big-1">Lahka tekstura vaniljeve kreme v kombinaciji z malinovim tartom tvori nepozaben ples okusov. Navdušile vas bodo tudi sveže jagode v notranjosti.</p>
+										<div class="cakes-title lang" key="malina">Malinova nevihta</div>
+										<p class="cakes-text lang" key="malina-1">Lahka tekstura vaniljeve kreme v kombinaciji
+											z malinovim tartom tvori nepozaben ples okusov. Navdušile vas bodo tudi sveže jagode v
+											notranjosti.</p>
 									</div>
 								</div>
 							</a>
@@ -136,7 +163,74 @@
 					</div>
 				</div>
 			</section>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<section class="page__cook cook-block">
+				<div class="cook__container _container">
+					<h3 class="cook__title block-title lang" key="cook">Kako kuhamo?</h3>
+					<div class="cook__content">
+						<div class="timeline">
+							<div class="container left">
+								<div class="content">
+									<div class="cook__image">
+										<img src="img/main/salad.png" alt="fruits">
+										<img src="img/main/salad (2).png" alt="fruits">
+										<img src="img/main/salad (1).png" alt="fruits">
+									</div>
+									<div class="cook__text block-text lang" key="cook-1">Jagode, oreščki, sadje</div>
+								</div>
+							</div>
+							<div class="container right">
+								<div class="content">
+									<div class="cook__image">
+										<img src="img/main/blender (1).png" alt="blender">
+									</div>
+									<div class="cook__text block-text lang" key="cook-2">Zdrobljen je</div>
+								</div>
+							</div>
+							<div class="container left">
+								<div class="content">
+									<div class="cook__image">
+										<img src="img/main/freezing.png" alt="freezing">
+									</div>
+									<div class="cook__text block-text lang" key="cook-3">Šok zamrzovanje -25°С</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__favorite favorite-block">
+				<div class="favorite-block__container _container">
+					<h3 class="favorite-block__title block-title lang" key="favorite">Najbolj zaželjen priboljšek ta
+						trenutek!
+					</h3>
+					<div class="favorite-block__sub-title block-text lang" key="favorite-1">Najokusnejše in najbolj uporabne
+						torte v Sloveniji!
+					</div>
+					<div class="favorite-block__content">
+						<div class="bg-img">
+							<div class="container-favor block-text">
+								<p class="lang" key="favorite-2">Naša praznična torta bo zvezda vašega praznovanja!</p>
+								<p class="lang" key="favorite-3">Svetel okus, najbolj sveže in uporabne sestavine,
+									brez sladkorja, brez moke in brez laktoze.</p>
+								<p class="lang" key="favorite-4">Okusna hrana mora prinesti užitek in korist</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__in-catalog in-catalog">
+				<div class="in-catalog__container _container">
+					<div class="in-catalog__body">
+						<img class="catalog-img" src="img/main/cupcake.png" alt="cupcake">
+						<h3 class="in-catalog__title lang" key="catalog">Pojdite v katalog in naročite praznično torto</h3>
+						<div class="button-cat">
+							<div class="in-catalog__button">
+								<a href="shop.html" class="botton-catalog lang" key="catalog-1">Naroči torto</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__top">
@@ -147,16 +241,19 @@
 							<nav class="footer__menu menu-footer">
 								<ul class="menu-footer__list">
 									<li class="menu-footer__item">
-										<a href="support.html" class="menu-footer__link lang" key="support-1">Kako oddati naročilo?</a>
+										<a href="support.html" class="menu-footer__link lang" key="support-1">Kako oddati
+											naročilo?</a>
 									</li>
 									<li class="menu-footer__item">
 										<a href="support.html" class="menu-footer__link lang" key="support-2">Pravno obvestilo</a>
 									</li>
 									<li class="menu-footer__item">
-										<a href="support.html" class="menu-footer__link lang" key="support-3">Zasebnost in piškotki</a>
+										<a href="support.html" class="menu-footer__link lang" key="support-3">Zasebnost in
+											piškotki</a>
 									</li>
 									<li class="menu-footer__item">
-										<a href="support.html" class="menu-footer__link lang" key="support-4">Vračila in reklamacije</a>
+										<a href="support.html" class="menu-footer__link lang" key="support-4">Vračila in
+											reklamacije</a>
 									</li>
 								</ul>
 							</nav>

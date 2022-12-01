@@ -29,32 +29,54 @@
 				<a href="index.html" class="header__logo">
 					<img src="img/logo/04.png" alt="logo">
 				</a>
-				<div class="header__menu menu">
+				<nav class="header__nav nav">
 					<div class="menu__icon">
 						<span></span>
 					</div>
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li><a href="aboutus.html" class="menu__link lang" key="about">o nas</a></li>
-							<li><a href="shop.html" class="menu__link lang" key="shop">trgovina</a>
-								<span class="menu__arrow"></span>
-								<ul class="menu__sub-list">
-									<li><a href="shop.html" class="menu__sub-link lang" key="cakes">torte</a></li>
-									<li><a href="shop.html" class="menu__sub-link lang" key="candy">sladkarije</a></li>
-									<li><a href="shop.html" class="menu__sub-link lang" key="cheese">skuta</a></li>
-									<li><a href="shop.html" class="menu__sub-link lang" key="popsicle">sladoled</a></li>
-									<li><a href="shop.html" class="menu__sub-link lang" key="komplet">sladki kompleti</a></li>
-								</ul>
-							</li>
-							<li><a href="delivery.html" class="menu__link lang" key="delivery">
-									dostava in plačilo</a>
-							</li>
-							<li><a href="contacts.html" class="menu__link lang" key="contacts">kontakti</a></li>
-							<li><a href="blog.html" class="menu__link lang" key="blog">blog</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+					<ul class="nav__list menu__list menu__body">
+						<li class="nav__item"><a href="aboutus.html" class="nav__link lang" key="about">o nas</a></li>
+						<li class="nav__item"><a href="shop.html" class="nav__link lang" key="shop">trgovina</a>
+							<span class="menu__arrow"></span>
+							<ul class="menu__sub-list">
+								<li><a href="shop.html" class="menu__sub-link lang" key="cakes">torte</a></li>
+								<li><a href="shop.html" class="menu__sub-link lang" key="candy">sladkarije</a></li>
+								<li><a href="shop.html" class="menu__sub-link lang" key="cheese">skuta</a></li>
+								<li><a href="shop.html" class="menu__sub-link lang" key="popsicle">sladoled</a></li>
+								<li><a href="shop.html" class="menu__sub-link lang" key="cupcakes">sladki kompleti</a></li>
+							</ul>
+						</li>
+						<li class="nav__item"><a href="delivery.html" class="nav__link lang" key="delivery">dostava in plačilo</a></li>
+						<li class="nav__item"><a href="contacts.html" class="nav__link lang" key="contacts">kontakti</a></li>
+						<li class="nav__item"><a href="blog.html" class="nav__link lang" key="blog">blog</a></li>
+					</ul>
+					<div class="header__cart cart" tabindex="0">
+						<div class="cart-image">
+							<img src="img/shop/bag-shopping.svg" alt="bag">
+							<span class="cart__quantity">0</span>
+						</div>
+						<div class="cart-content">
+							<ul class="cart-content__list" data-simplebar>
+								<li class="cart-content__item">
+									<article class="cart-content__product cart-product">
+										<img src="img/shop/cakes/bazil/00011.jpeg" alt="bazil" class="cart-product__img">
+										<div class="cart-product__text">
+											<h3 class="cart-product__title lang" key="bazil">Svežina bazilike</h3>
+											<span class="cart-product__price">45 €</span>
+										</div>
+										<button class="cart-product__delete" aria-label="Видалити товар"></button>
+									</article>
+								</li>
+							</ul>
+							<div class="cart-content__buttom">
+								<div class="cart-content__fullprice">
+									<span>Skupna cena:</span>
+									<span class="fullprice">1234 €</span>
+								</div>
+								<button class="cart-content__btn btn lang" key="basket-card">Dodaj v voziček</button>
+							</div>
+						</div>
+					</div>
+				</nav>
 			</div>
 		</header>
 		<main class="page">
@@ -227,26 +249,29 @@
 				<div class="footer__main _container">
 					<div class="footer__row">
 						<div class="footer__column">
-							<div class="footer__label">Pomoč kupcem</div>
+							<div class="footer__label lang" key="support">Pomoč kupcem</div>
 							<nav class="footer__menu menu-footer">
 								<ul class="menu-footer__list">
 									<li class="menu-footer__item">
-										<a href="support.html" class="menu-footer__link">Kako oddati naročilo?</a>
+										<a href="support.html" class="menu-footer__link lang" key="support-1">Kako oddati
+											naročilo?</a>
 									</li>
 									<li class="menu-footer__item">
-										<a href="support.html" class="menu-footer__link">Pravno obvestilo</a>
+										<a href="support.html" class="menu-footer__link lang" key="support-2">Pravno obvestilo</a>
 									</li>
 									<li class="menu-footer__item">
-										<a href="support.html" class="menu-footer__link">Zasebnost in piškotki</a>
+										<a href="support.html" class="menu-footer__link lang" key="support-3">Zasebnost in
+											piškotki</a>
 									</li>
 									<li class="menu-footer__item">
-										<a href="support.html" class="menu-footer__link">Vračila in reklamacije</a>
+										<a href="support.html" class="menu-footer__link lang" key="support-4">Vračila in
+											reklamacije</a>
 									</li>
 								</ul>
 							</nav>
 						</div>
 						<div class="footer__column">
-							<div class="footer__label">Sledite nam</div>
+							<div class="footer__label lang" key="support-5">Sledite nam</div>
 							<div class="footer__contacts contacts-footer">
 								<a href="https://www.instagram.com/nobakecafe/" class="social__item" target='_blank'>
 									<img src="img/icon/inst.png" alt="instagram">

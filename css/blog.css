@@ -1,0 +1,194 @@
+/* -------------------------------------------------------------------- */
+.blog-page {
+	padding: 200px 0px 50px 0px;
+}
+/* Header/Blog Title */
+.blog-page__header {
+	padding: 30px;
+	font-size: 40px;
+	text-align: center;
+	background: url(../img/icon/01.png) 100% 50% no-repeat;
+}
+.blog-tittle {
+	font-size: 25px;
+	padding: 10px 0px;
+}
+.blog-sub-tittle {
+	font-size: 16px;
+	padding: 10px 0px;
+}
+.blog-img {
+	position: relative;
+	padding: 30% 0px 30% 0px;
+	margin-bottom: 20px;
+}
+.blog-img img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+.about-me {
+	position: relative;
+	padding: 50% 0px 50% 0px;
+	margin-bottom: 10px;
+}
+.about-me img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+.popular-post-img {
+	position: relative;
+	padding: 30% 10px 30% 10px;
+	display: block;
+}
+.txt {
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+	text-shadow: 2px 2px 10px #cee5bc;
+}
+.bottom-left {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+.popular-post-img img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	opacity: 0.5;
+	left: 0;
+	object-fit: cover;
+	transition: all 0.3s ease 0s;
+}
+.popular-post-img img:hover {
+	opacity: 1;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.blog-page__column {
+	float: left;
+	width: 100%;
+}
+
+/* Right column */
+.blog-page__leftcolumn {
+	float: left;
+	width: 45%;
+	padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+	background-color: #aaa;
+	width: 100%;
+	padding: 20px;
+}
+
+/* Add a card effect for articles */
+.blog-page__card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+	box-shadow: 4px 8px 20px #27331a;
+}
+
+/* Clear floats after the columns */
+.blog-page__row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Footer */
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+	.blog-page__column,
+	.blog-page__leftcolumn {
+		width: 100%;
+		padding: 0;
+	}
+}
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background-color: #cee5bc;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	color: #000;
+	right: 15px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+.card {
+	padding: 5px 15px 5px 15px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #000000;
+	display: block;
+	transition: 0.3s;
+}
+.card:hover {
+	color: #2d530f;
+}
+.blog-text {
+	font-size: 15px;
+	color: #282828;
+	line-height: 138%;
+}
+.card-social a {
+	padding: 5px 10px 5px 15px;
+}
+.cards-social {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	text-align: start;
+}
+.social-contacts {
+}
+.social__items-blog {
+	padding-right: 15px;
+}
+.social__items-blog img:hover {
+	background-color: #77b931;
+	border-radius: 50%;
+}
+.sidenav-title {
+	color: #000;
+	padding-bottom: 10px;
+	font-size: 24px;
+}
+.sidenav-title span {
+	color: #000;
+	padding-bottom: 10px;
+}
+.card-last {
+	margin-bottom: 50px;
+}
+.blog-button {
+	padding-left: 15px;
+}

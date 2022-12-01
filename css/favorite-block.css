@@ -1,0 +1,46 @@
+.favorite-block{
+	padding-bottom: 60px;
+}
+.bg-img {
+	background-image: url("../img/main/IMG_2828.jpg");
+	min-height: 480px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-top: 30px;
+}
+
+.container-favor {
+	position: absolute;
+	right: 0;
+	top: 20%;
+	margin: 20px;
+	max-width: 350px;
+	padding: 16px;
+	background-color: white;
+}
+.favorite-block__title {
+	position: relative;
+	text-align: center;
+}
+.favorite-block__title:after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 33.33%;
+	width: 33.33%;
+	height: 1px;
+	background-color: #37581d;
+}
+.favorite-block__sub-title {
+	text-align: center;
+}
+@media (max-width:598px){
+	.favorite-block{
+		padding-bottom: 40px;
+	}
+	.container-favor{
+		top: 25%;
+	}
+}

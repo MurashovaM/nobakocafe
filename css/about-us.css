@@ -1,0 +1,139 @@
+/* --------------------PAGE ABOUT-US---------------------------------------- */
+
+.page__about-us-block {
+}
+.about-us {
+	padding: 200px 0px 50px 0px;
+}
+.about-us__container {
+}
+._container {
+}
+.about-us__title {
+	padding-bottom: 20px;
+	align-items: center;
+	text-align: center;
+}
+.about-us__body {
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+	z-index: 2;
+}
+.about-us__content {
+	flex: 1 1 auto;
+	padding: 0px 50px 0px 20px;
+}
+.about-us__text p {
+	padding-bottom: 10px;
+}
+
+.about-us__img {
+	flex: 0 0 30%;
+	position: relative;
+	padding: 17% 0px 20% 0px;
+}
+.about-us__img img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	max-width: fit-content;
+}
+.about-us__img:not(:last-child) {
+	margin: 0px 0px 0px 0px;
+}
+@media (max-width: 909.98px) {
+	.about-us__content {
+		padding: 0px 20px 0px 20px;
+	}
+	.about-us {
+		padding: 120px 0px 50px 0px;
+	}
+}
+@media (max-width: 992px) {
+	.about-us__body {
+		flex-direction: column-reverse;
+		align-items: stretch;
+	}
+	.about-us__img:not(:last-child) {
+		margin: 50px 0px 0px 0px;
+	}
+	.about-us__img {
+		padding: 0px 0px 80% 0px;
+	}
+	.about-us__content {
+		padding: 20px 0px 20px 0px;
+	}
+}
+@media (max-width: 867px) {
+	.about-us__title {
+		font-size: 28px;
+		padding-bottom: 0px;
+	}
+}
+@media (max-width: 767px) {
+	.about-us__title {
+		font-size: 26px;
+		padding-bottom: 0px;
+	}
+}
+@media (max-width: 667px) {
+	.about-us__title {
+		font-size: 24px;
+	}
+}
+@media (max-width: 540px) {
+	.about-us__title {
+		font-size: 20px;
+	}
+}
+@media (max-width: 467px) {
+	.about-us__text {
+		font-size: 16px;
+	}
+}
+/* ----------------------GRID_IMAGE---------------------------- */
+.page__grid-image {
+	margin-bottom: 50px;
+}
+.grid-image {
+	text-align: center;
+	padding: 32px;
+}
+.row {
+	display: -ms-flexbox; /* IE 10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE 10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+/* Create two equal columns that sits next to each other */
+.column {
+	-ms-flex: 50%; /* IE 10 */
+	flex: 50%;
+	padding: 0 4px;
+}
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+}
+/* Style the buttons */
+.button {
+	border: none;
+	border-radius: 10%;
+	outline: none;
+	padding: 10px 16px;
+	background-color: #cee5bc;
+	cursor: pointer;
+	font-size: 18px;
+}
+.button:hover {
+	background-color: #93c66c;
+}
+.button.active {
+	background-color: rgb(85, 145, 58);
+	color: white;
+}
