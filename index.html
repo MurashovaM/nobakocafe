@@ -85,8 +85,8 @@
 				<div class="main-block__container _container">
 					<div class="main-block__body">
 						<h1 class="main-block__title">No-bake Cafe</h1>
-						<div class="main-block__text lang" key="main-block__text">Zdrave-surove-veganske-ročno narejene
-							sladice</div>
+						<div class="main-block__text lang" key="main-block__text">Zdrave-presne sladice-veganske-ročno
+							narejene sladice</div>
 					</div>
 				</div>
 				<div class="main-block__image _ibg">
@@ -138,18 +138,20 @@
 					<div class="image-big__body">
 						<div class="image-big__items">
 							<a href="shop.html" class="image-big__item">
-								<img class="image-first" src="img/bigimage/01.jpeg" alt="cake">
+								<img class="image-first" src="img/bigimage/1.jpg" alt="cake">
 								<div class="overlay chocoberry">
 									<div class="cakes__content">
-										<div class="cakes-title lang" key="malina">Malinova nevihta</div>
-										<p class="cakes-text lang" key="malina-1">Lahka tekstura vaniljeve kreme v kombinaciji
-											z malinovim tartom tvori nepozaben ples okusov. Navdušile vas bodo tudi sveže jagode v
-											notranjosti.</p>
+										<div class="cakes-title lang" key="bazil">Svežina bazilike</div>
+										<p class="cakes-text lang" key="bazil-1">Vrhunski okus osvežilne limete s poudarkom na
+											baziliki. Za lepo
+											zeleno barvo poskrbi dodatek špinače. V središču torte se razkriva malinov kuli. V ta
+											nenavaden
+											okus se boste zagotovo zaljubili že ob prvem grižljaju.</p>
 									</div>
 								</div>
 							</a>
 							<a href="shop.html" class="image-big__item">
-								<img class="image-first" src="img/bigimage/015.jpeg" alt="cake">
+								<img class="image-first" src="img/bigimage/2.jpg" alt="cake">
 								<div class="overlay lime">
 									<div class="cakes__content">
 										<div class="cakes-title lang" key="malina">Malinova nevihta</div>
@@ -212,7 +214,7 @@
 								<p class="lang" key="favorite-2">Naša praznična torta bo zvezda vašega praznovanja!</p>
 								<p class="lang" key="favorite-3">Svetel okus, najbolj sveže in uporabne sestavine,
 									brez sladkorja, brez moke in brez laktoze.</p>
-								<p class="lang" key="favorite-4">Okusna hrana mora prinesti užitek in korist</p>
+								<p class="lang" key="favorite-4">Okusna hrana mora prinesti užitek in korist.</p>
 							</div>
 						</div>
 					</div>
@@ -222,11 +224,92 @@
 				<div class="in-catalog__container _container">
 					<div class="in-catalog__body">
 						<img class="catalog-img" src="img/main/cupcake.png" alt="cupcake">
-						<h3 class="in-catalog__title lang" key="catalog">Pojdite v katalog in naročite praznično torto</h3>
+						<h3 class="in-catalog__title lang" key="catalog">Pojdite v katalog in naročite praznično torto ali
+							sladico za čajanko</h3>
 						<div class="button-cat">
 							<div class="in-catalog__button">
 								<a href="shop.html" class="botton-catalog lang" key="catalog-1">Naroči torto</a>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__modal-img madal-image">
+				<div class="madal-image__container _container">
+					<div class="row1">
+						<div class="column1">
+							<img src="img/main/modal-img/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+						</div>
+						<div class="column1">
+							<img src="img/main/modal-img/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+						</div>
+						<div class="column1">
+							<img src="img/main/modal-img/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+						</div>
+
+						<div class="column1">
+							<img src="img/main/modal-img/4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+						</div>
+						<div class="column1">
+							<img src="img/main/modal-img/5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+						</div>
+					</div>
+
+
+					<div id="myModal" class="modal1">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+
+							<div class="mySlides">
+								<div class="numbertext">1 / 5</div>
+								<img src="img/main/modal-img/1.jpg" style="width:100%">
+							</div>
+							<div class="mySlides">
+								<div class="numbertext">2 / 5</div>
+								<img src="img/main/modal-img/2.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">3 / 5</div>
+								<img src="img/main/modal-img/3.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">4 / 5</div>
+								<img src="img/main/modal-img/4.jpg" style="width:100%">
+							</div>
+							<div class="mySlides">
+								<div class="numbertext">5 / 5</div>
+								<img src="img/main/modal-img/5.jpg" style="width:100%">
+							</div>
+
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+							<div class="caption-container1">
+								<p id="caption1"></p>
+							</div>
+							<div class="column1">
+								<img class="demo" src="img/main/modal-img/1_1.jpg" onclick="currentSlide(1)" alt="Sladkarije">
+							</div>
+
+							<div class="column1">
+								<img class="demo" src="img/main/modal-img/2_2.jpg" onclick="currentSlide(2)" alt="Torte">
+							</div>
+
+							<div class="column1">
+								<img class="demo" src="img/main/modal-img/3_3.jpg" onclick="currentSlide(3)" alt="Torte">
+							</div>
+
+							<div class="column1">
+								<img class="demo" src="img/main/modal-img/4_4.jpg" onclick="currentSlide(4)" alt="Sladkarije">
+							</div>
+
+							<div class="column1">
+								<img class="demo" src="img/main/modal-img/5_5.jpg" onclick="currentSlide(5)" alt="Skuta">
+							</div>
+
 						</div>
 					</div>
 				</div>
@@ -276,6 +359,7 @@
 	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/madal-img.js"></script>
 </body>
 
 </html>

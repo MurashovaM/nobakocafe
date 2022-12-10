@@ -218,6 +218,7 @@ margin-bottom: 10px;
 }
 .order-modal__product {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 
@@ -232,6 +233,20 @@ margin-bottom: 10px;
 }
 .order-product__text {
 	margin-right: 10px;
+	min-width: 200px; 
+	text-align: left;
+	align-items: center;
+	justify-content: left;
+}
+@media(max-width:480px){
+	.order-product__text{
+		min-width: 150px;
+	}
+}
+@media(max-width:380px){
+	.order-product__text{
+		min-width: 120px;
+	}
 }
 .order-product__title {
 	font-weight: normal;

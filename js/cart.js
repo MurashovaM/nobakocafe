@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	};
 
 	const printFullPrice = () => {
-		fullPrice.textContent = `${normalPrice(price)} ₽`;
+		fullPrice.textContent = `${normalPrice(price)} €`;
 	};
 
 	const generateCartProduct = (img, title, price, id) => {
@@ -66,6 +66,17 @@ document.addEventListener('DOMContentLoaded', () => {
 	};
 
 
+	const updataStorage = () => {
+		let parent = cartProductsList.querySelector('.simplebar-content');
+		let html = parent.innerHTML;
+		html = html.trim();
+
+		if (html.length) {
+			localStorage.setItem('products', html);
+		} else {
+			localStorage.removeItem('products');
+		}
+	};
 
 	productsBtn.forEach(el => {
 
@@ -121,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					<h3 class="order-product__title">${title}</h3>
 					<span class="order-product__price">${normalPrice(price)}</span>
 				</div>
-				<button class="order-product__delete">Удалить</button>
+				<button class="order-product__delete">Izbriši</button>
 			</article>
 		</li>
 	`;
@@ -194,28 +205,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	};
 
-	// let addbutton = document.querySelectorAll('.product__btn ')
-	// console.log(addbutton)
-	// addbutton.forEach(el => {
-	// 	addEventListener('click', console.log(el))
-	// 	console.log(el)
-	// });
-
 	const initialState = () => {
-		console.log(1)
-		if (localStorage.getItem('products') !== null) {
-			console.log(2)
-
-
-
-			// cartProductsList.querySelector('.simplebar-content').innerHTML = localStorage.getItem('products');
-
+		if (localStorage.getItem('products') != null) {
+			cartProductsList.querySelector('.simplebar-content').innerHTML = (localStorage.getItem('products'));
 			printQuantity();
 			countSumm();
 			printFullPrice();
 
-			document.querySelectorAll('cart-content__product').forEach(el => {
+
+			document.querySelectorAll('.cart-content__product').forEach(el => {
 				let id = el.dataset.id;
+				console.log(id)
 				document.querySelector(`.product[data-id="${id}"]`).querySelector('.product__btn').disabled = true;
 			});
 		}
@@ -223,28 +223,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	initialState();
 
-
-
-
-	const updataStorage = () => {
-		let parent = cartProductsList.querySelector('.simplebar-content');
-		let html = parent.innerHTML;
-		html = html.trim();
-
-		if (html.length) {
-			localStorage.setItem('products', html);
-		} else {
-			localStorage.removeItem('products');
-		}
-	};
-
 	document.querySelector('.modal').addEventListener('click', (e) => {
-		if (e.target.classList.contains('.order-product__delete')) {
+		if (e.target.classList.contains('order-product__delete')) {
 			let id = e.target.closest('.order-modal__product').dataset.id;
 			let cartProduct = document.querySelector(`.cart-content__product[data-id="${id}"]`).closest('.cart-content__item');
-			deleteProducts(cartProduct)
-			// deleteOutModal(id);
+			deleteProducts(cartProduct);
 			e.target.closest('.order-modal__product').remove();
 		}
 	});
+
 });

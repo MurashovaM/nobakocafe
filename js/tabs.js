@@ -48,3 +48,17 @@ if (products) {
 		}
 	});
 }
+
+// ------------------------------------------------------------------------
+$(document).ready(function () {
+	$('.popup__img').slick({
+		arrows: false,
+		fade: true,
+		dots: false,
+		initialSlide: 1,
+		adaptiveHeight: true,
+		autoplay: true,
+		speed: 2000,
+		autoplaySpeed: 2500,
+	});
+});

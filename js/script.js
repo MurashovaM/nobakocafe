@@ -75,24 +75,8 @@ for (i = 0; i < coll.length; i++) {
 		}
 	});
 }
-// ------------------------------------------------------------------------
-$(document).ready(function () {
-	$('.popup__img').slick({
-		arrows: false,
-		fade: true,
-		dots: false,
-		initialSlide: 1,
-		adaptiveHeight: true,
-		autoplay: true,
-		speed: 2000,
-		autoplaySpeed: 2500,
-	});
-});
-// --------------------------------------------------------------------
-function openNav() {
-	document.getElementById("mySidenav").style.width = "300px";
-}
 
-function closeNav() {
-	document.getElementById("mySidenav").style.width = "0";
-}
+// --------------------------------------------------------------------
+
+// --------------------------------------------------------------------
+

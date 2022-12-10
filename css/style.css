@@ -10,6 +10,7 @@
 @import "footer.css";
 @import "time-line.css";
 @import "favorite-block.css";
+@import "modal-img.css";
 
 html,
 body {
@@ -81,14 +82,15 @@ body._lock {
 		font-size: 28px;
 	}
 }
-@media (max-width: 497px){
+@media (max-width: 497px) {
 	.block-title {
 		font-size: 24px;
 	}
 	.block-text {
-		font-size: 14px;}
+		font-size: 14px;
+	}
 }
-@media (max-width: 350px){
+@media (max-width: 350px) {
 	.block-title {
 		font-size: 20px;
 	}
@@ -699,7 +701,7 @@ body._touch .menu__list > li._active .menu__arrow {
 	display: flex;
 	align-items: center;
 }
-.catalog-img{
+.catalog-img {
 	margin: 10px;
 	align-items: center;
 }
@@ -710,7 +712,7 @@ body._touch .menu__list > li._active .menu__arrow {
 	line-height: 140%;
 }
 
-.button-cat{
+.button-cat {
 	flex: 0 1 50%;
 	align-items: center;
 	justify-content: space-between;
@@ -725,7 +727,7 @@ body._touch .menu__list > li._active .menu__arrow {
 .botton-catalog {
 	background: #e08088;
 	border: 1px solid #f2404f;
-	border-radius:5px ;
+	border-radius: 5px;
 	display: flex;
 	min-height: 58px;
 	width: 80%;
@@ -737,43 +739,45 @@ body._touch .menu__list > li._active .menu__arrow {
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
 }
-.botton-catalog:hover{
+.botton-catalog:hover {
 	background: #f2404f;
 }
-@media (max-width:908px){
+@media (max-width: 908px) {
 	.in-catalog__button {
 		margin-left: 0%;
 		width: 100%;
 	}
-	.button-cat{
+	.button-cat {
 		flex: 0 1 80%;
 	}
-	.in-catalog__title{
+	.in-catalog__title {
 		font-size: 28px;
 	}
+}
+@media (max-width: 598px) {
+	.in-catalog__body {
+		flex-direction: column;
 	}
-	@media (max-width:598px){
-		.in-catalog__body{
-			flex-direction: column;
-		}
-		.botton-catalog {
-			min-width: 230px;
-		}
-		.in-catalog__title{
-			text-align: center;
-			font-size: 28px;
-			margin-bottom: 20px;
-		}
+	.botton-catalog {
+		min-width: 230px;
 	}
-	@media (max-width: 497px){
-		.in-catalog__title {
-			font-size: 24px;
-		}
-		.block-text {
-			font-size: 14px;}
+	.in-catalog__title {
+		text-align: center;
+		font-size: 28px;
+		margin-bottom: 20px;
 	}
-	@media (max-width: 350px){
-		.in-catalog__title {
-			font-size: 20px;
-		}
+}
+@media (max-width: 497px) {
+	.in-catalog__title {
+		font-size: 24px;
 	}
+	.block-text {
+		font-size: 14px;
+	}
+}
+@media (max-width: 350px) {
+	.in-catalog__title {
+		font-size: 20px;
+	}
+}
+/* ------------------------------------------------------- */
