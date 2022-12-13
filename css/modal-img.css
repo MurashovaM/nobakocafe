@@ -1,7 +1,7 @@
 .page__modal-img {
+	padding: 0px 0px 40px 0px;
 }
 .madal-image {
-	padding: 20px 10px;
 	flex-wrap: wrap;
 }
 .madal-image__container {
@@ -108,7 +108,7 @@
 		padding-bottom: 5px;
 	}
 }
-/* The Modal (background) */
+
 .modal1 {
 	display: none;
 	position: fixed;
@@ -120,7 +120,7 @@
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.699);
+	background-color: rgba(0, 0, 0, 0.897);
 }
 
 /* Modal Content */

@@ -1,9 +1,16 @@
-.favorite-block{
-	padding-bottom: 60px;
+.favorite-block {
+	padding: 0px 0px 40px 0px;
+}
+.parallax-img{
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .bg-img {
 	background-image: url("../img/main/IMG_2828.jpg");
-	min-height: 480px;
+	min-height: 580px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -13,12 +20,21 @@
 
 .container-favor {
 	position: absolute;
-	right: 0;
-	top: 20%;
+	right: 20%;
+	top: 23%;
 	margin: 20px;
 	max-width: 350px;
 	padding: 16px;
 	background-color: white;
+	border: 1px solid #37581d;
+}
+@media (max-width: 760px) {
+	.bg-img {
+		min-height: 480px;
+	}
+	.container-favor {
+		right: 10%;
+	}
 }
 .favorite-block__title {
 	position: relative;
@@ -36,11 +52,11 @@
 .favorite-block__sub-title {
 	text-align: center;
 }
-@media (max-width:598px){
-	.favorite-block{
+@media (max-width: 598px) {
+	.favorite-block {
 		padding-bottom: 40px;
 	}
-	.container-favor{
+	.container-favor {
 		top: 25%;
 	}
 }

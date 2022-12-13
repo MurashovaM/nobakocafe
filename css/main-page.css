@@ -81,7 +81,7 @@
 .image-big {
 }
 .image-big__container {
-	padding: 0px 0px 30px 0px;
+	padding: 0px 0px 40px 0px;
 }
 .image-big__body {
 }
@@ -207,5 +207,213 @@
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 160%;
+	}
+}
+/* ---------------------------------------------------------------- */
+.special-offer {
+	padding: 0px 0px 40px 0px;
+}
+.special-offer__container {
+	display: flex;
+	gap: 30px;
+}
+.special-offer__content {
+	flex: 0 1 50%;
+	align-self: center;
+}
+
+.special-offer__title {
+	position: relative;
+}
+.special-offer__title::before {
+	content: "";
+	background: url(../img/offer/100-percent-natural-products-tag.png) 0 0 / 100% no-repeat;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 390%;
+	right: 10%;
+
+	z-index: -1;
+}
+.special-offer__text {
+	max-width: 500px;
+}
+.block-text {
+	padding-bottom: 10px;
+}
+.taste {
+	position: relative;
+	margin-left: 15px;
+}
+.taste::before {
+	content: "";
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	background-color: #2d530f;
+	border: 1px solid #2d530f;
+	border-radius: 50%;
+	margin-top: 9px;
+	margin-left: -14px;
+}
+.special-offer__actions {
+	display: flex;
+	flex-wrap: wrap;
+}
+.special-offer__button {
+	padding: 15px 15px;
+	font-size: 16px;
+	margin: 10px 10px 10px 0px;
+	font-weight: 500;
+	color: rgb(0, 0, 0);
+	letter-spacing: 1px;
+}
+.btn-pink {
+	background: #fadcdca1;
+	border: 1px solid #37581d;
+}
+.btn-pink:hover {
+	background: #e4b4b8a6;
+	border: 1px solid #37581d;
+	transition: all 0, 4s ease 0s;
+}
+.btn-green {
+	background: #cdf3af80;
+	border: 1px solid #37581d;
+}
+.btn-green:hover {
+	background: #cee5bc;
+	transition: all 0, 4s ease 0s;
+}
+.special-offer__images {
+	flex: 0 1 50%;
+}
+.images-offer {
+	display: flex;
+	justify-content: center;
+	gap: 5%;
+}
+.images-offer__column {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.images-offer__item {
+	overflow: hidden;
+	border-radius: 60%/29%;
+}
+.images-offer__item-1,
+.images-offer__item-4 {
+	border-radius: 70%/39%;
+}
+.images-offer__item-2 {
+	border-radius: 50% 50% 0 0%;
+}
+.images-offer__item-3 {
+	border-radius: 0 0 50% 50%;
+}
+.images-offer__item img {
+	max-width: 100%;
+}
+@media (max-width: 906.98px) {
+	.special-offer__actions {
+	}
+}
+@media (max-width: 767.98px) {
+	.special-offer__container {
+		flex-direction: column;
+	}
+	.special-offer__content {
+		align-self: stretch;
+	}
+}
+@media (max-width: 476.98px) {
+	.special-offer__button {
+		padding: 10px 10px 10px 10px;
+		font-size: 16px;
+		margin: 5px;
+		text-align: center;
+		font-weight: 500;
+	}
+}
+/* -------------------------------------------------------------------------- */
+.page__questions {
+	padding: 0px 0px 40px 0px;
+}
+.info-questions {
+}
+.info-questions__container {
+}
+.parallax-img {
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax-img {
+	background-image: url(../img/main/01.jpg);
+	min-height: 580px;
+}
+.info-questions__content {
+}
+.info-questions__image {
+}
+.info-questions__body {
+}
+.info-questions__title {
+	padding-top: 12%;
+	color: #f1f1f1;
+	font-size: 34px;
+	margin-bottom: 20px;
+	line-height: 140%;
+}
+
+.info-questions__block {
+	padding: 40px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.info-questions__form {
+	color: #fff;
+}
+.info-questions__bottomn {
+	color: black;
+	padding: 10px 20px;
+	width: 500px;
+	background-color: #f1f1f1;
+	text-align: center;
+	border: 1px solid #37581d;
+	cursor: pointer;
+	justify-content: center;
+}
+.info-questions__bottomn:hover {
+	background-color: #cee5bc;
+}
+
+@media (max-width: 867.98px) {
+	.info-questions__title {
+		padding-top: 15%;
+	}
+}
+@media (max-width: 667.98px) {
+	.info-questions__bottomn {
+		width: 300px;
+	}
+	.parallax-img {
+		min-height: 380px;
+	}
+}
+@media (max-width: 445.98px) {
+	.info-questions__bottomn {
+		width: 250px;
+	}
+	.info-questions__block {
+		flex-direction: column;
+	}
+	.info-questions__bottomn {
+		margin-top: 10px;
 	}
 }

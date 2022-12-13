@@ -694,6 +694,7 @@ body._touch .menu__list > li._active .menu__arrow {
 .in-catalog {
 }
 .in-catalog__container {
+	padding: 15px 0px 40px 15px;
 }
 ._container {
 }
@@ -725,22 +726,21 @@ body._touch .menu__list > li._active .menu__arrow {
 	align-items: flex-end;
 }
 .botton-catalog {
-	background: #e08088;
-	border: 1px solid #f2404f;
-	border-radius: 5px;
+	background: #f3f3f3;
+	border: 1px solid #37581d;
 	display: flex;
 	min-height: 58px;
 	width: 80%;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	color: #ffffff;
+	color: #000000;
 	padding: 0px 22px;
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
 }
 .botton-catalog:hover {
-	background: #f2404f;
+	background: #cee5bc;
 }
 @media (max-width: 908px) {
 	.in-catalog__button {

@@ -1,5 +1,5 @@
 .page__cook {
-	margin-bottom: 60px;
+	padding: 0px 0px 40px 0px;
 }
 .timeline {
 	position: relative;
@@ -71,7 +71,6 @@
 	padding: 20px 30px;
 	background-color: transparent;
 	position: relative;
-	border-radius: 6px;
 	justify-content: center;
 	border: 1px solid #37581d;
 	max-width: 500px;
