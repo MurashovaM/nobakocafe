@@ -63,7 +63,17 @@
 }
 /* ---------------------------------------------------------------- */
 .page__what-is-opganic-raw {
-	margin: 40px 0px 40px 0px;
+	padding: 60px 0px 40px 0px;
+}
+@media (max-width: 767.98px){
+	.page__what-is-opganic-raw {
+		padding: 80px 0px 40px 0px;
+	}
+}
+@media (max-width: 676.98px){
+	.page__what-is-opganic-raw {
+		padding: 40px 0px 40px 0px;
+	}
 }
 .what-is-opganic-raw__container {
 	background: url(../img/icon/adventage/001-vegan.png) 100% 100% no-repeat;

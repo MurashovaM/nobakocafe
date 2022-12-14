@@ -15,69 +15,79 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="translate__container _container">
-				<ul class="menu__button">
-					<li class="header-item-lang-sl"><button id="sl" class="translate">
-							<img src="img/lang/02.svg.png" alt=""></button>
-						</button></li>
-					<li class="header-item-lang-en"><button id="en" class="translate">
-							<img src="img/lang/01.svg.png" alt=""></button>
-					</li>
-				</ul>
-			</div>
 			<div class="header__container _container">
 				<a href="index.html" class="header__logo">
 					<img src="img/logo/04.png" alt="logo">
 				</a>
-				<nav class="header__nav nav">
-					<div class="menu__icon">
-						<span></span>
-					</div>
-					<ul class="nav__list menu__list menu__body">
-						<li class="nav__item"><a href="aboutus.html" class="nav__link lang" key="about">o nas</a></li>
-						<li class="nav__item"><a href="shop.html" class="nav__link lang" key="shop">trgovina</a>
-							<span class="menu__arrow"></span>
-							<ul class="menu__sub-list">
-								<li><a href="shop.html" class="menu__sub-link lang" key="cakes">torte</a></li>
-								<li><a href="shop.html" class="menu__sub-link lang" key="candy">sladkarije</a></li>
-								<li><a href="shop.html" class="menu__sub-link lang" key="cheese">skuta</a></li>
-								<li><a href="shop.html" class="menu__sub-link lang" key="popsicle">sladoled</a></li>
-								<li><a href="shop.html" class="menu__sub-link lang" key="cupcakes">sladki kompleti</a></li>
-							</ul>
-						</li>
-						<li class="nav__item"><a href="delivery.html" class="nav__link lang" key="delivery">dostava in
-								plačilo</a></li>
-						<li class="nav__item"><a href="contacts.html" class="nav__link lang" key="contacts">kontakti</a></li>
-						<li class="nav__item"><a href="blog.html" class="nav__link lang" key="blog">blog</a></li>
-					</ul>
-					<div class="header__cart cart" tabindex="0">
-						<div class="cart-image">
-							<img src="img/shop/bag-shopping.svg" alt="bag">
-							<span class="cart__quantity">0</span>
-						</div>
-						<div class="cart-content">
-							<ul class="cart-content__list" data-simplebar>
-								<li class="cart-content__item">
-									<article class="cart-content__product cart-product">
-										<img src="img/shop/cakes/bazil/00011.jpeg" alt="bazil" class="cart-product__img">
-										<div class="cart-product__text">
-											<h3 class="cart-product__title lang" key="bazil">Svežina bazilike</h3>
-											<span class="cart-product__price">45 €</span>
-										</div>
-										<button class="cart-product__delete" aria-label="Видалити товар"></button>
-									</article>
-								</li>
-							</ul>
-							<div class="cart-content__buttom">
-								<div class="cart-content__fullprice">
-									<span>Skupna cena:</span>
-									<span class="fullprice">1234 €</span>
-								</div>
-								<button class="cart-content__btn btn lang" key="basket-card">Dodaj v voziček</button>
-							</div>
-						</div>
+				<nav class="header__menu menu">
+					<div class="menu__body">
+						<ul class="menu__list nav__list">
+							<li class="menu__item">
+								<a href="aboutus.html" class="menu__link nav__link lang" key="about">O nas</a>
+							</li>
+							<li class="menu__item nav__item">
+								<a href="shop.html" class="menu__link nav__link lang" key="shop">Trgovina</a>
+								<span class="menu__arrow"></span>
+								<ul class="menu__sub-list">
+									<li><a href="shop.html" class="menu__sub-link lang" key="cakes">torte</a></li>
+									<li><a href="shop.html" class="menu__sub-link lang" key="candy">sladkarije</a></li>
+									<li><a href="shop.html" class="menu__sub-link lang" key="cheese">skuta</a></li>
+									<li><a href="shop.html" class="menu__sub-link lang" key="popsicle">sladoled</a></li>
+									<li><a href="shop.html" class="menu__sub-link lang" key="cupcakes">sladki kompleti</a></li>
+								</ul>
+							</li>
+							<li class="menu__item">
+								<a href="delivery.html" class="menu__link nav__link lang" key="delivery">Dostava</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html" class="menu__link nav__link lang" key="contacts">Kontakti</a>
+							</li>
+							<li class="menu__item">
+								<a href="blog.html" class="menu__link nav__link lang" key="blog">Blog</a>
+							</li>
+						</ul>
 					</div>
 				</nav>
+				<!-- <div class="header__cart cart" tabindex="0">
+					<div class="cart-image">
+						<img src="img/shop/bag-shopping.svg" alt="bag">
+						<span class="cart__quantity">0</span>
+					</div>
+					<div class="cart-content">
+						<ul class="cart-content__list" data-simplebar>
+							<li class="cart-content__item">
+								<article class="cart-content__product cart-product">
+									<img src="img/shop/cakes/bazil/00011.jpeg" alt="bazil" class="cart-product__img">
+									<div class="cart-product__text">
+										<h3 class="cart-product__title lang" key="bazil">Svežina bazilike</h3>
+										<span class="cart-product__price">45 €</span>
+									</div>
+									<button class="cart-product__delete" aria-label="Видалити товар"></button>
+								</article>
+							</li>
+						</ul>
+						<div class="cart-content__buttom">
+							<div class="cart-content__fullprice">
+								<span>Skupna cena:</span>
+								<span class="fullprice">1234 €</span>
+							</div>
+							<button class="cart-content__btn btn lang" key="basket-card">Dodaj v voziček</button>
+						</div>
+					</div>
+				</div> -->
+				<a href="#" class="header__button">
+					<ul class="menu__button">
+						<li class="header-item-lang-sl"><button id="sl" class="translate">
+								<img src="img/lang/02.svg.png" alt=""></button>
+							</button></li>
+						<li class="header-item-lang-en"><button id="en" class="translate">
+								<img src="img/lang/01.svg.png" alt=""></button>
+						</li>
+					</ul>
+				</a>
+				<button class="menu__icon icon__menu" type="button">
+					<span></span>
+				</button>
 			</div>
 		</header>
 		<main class="page">
